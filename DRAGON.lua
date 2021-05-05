@@ -137,14 +137,13 @@ end
 _redis = load_redis()  
 --------------------------------------------------------------------------------------------------------------
 print([[
-__  __          _    _ __  __  ____  _    _ _____
- |  \/  |   /\   | |  | |  \/  |/ __ \| |  | |  __ \
- | \  / |  /  \  | |__| | \  / | |  | | |  | | |  | |
- | |\/| | / /\ \ |  __  | |\/| | |  | | |  | | |  | |
- | |  | |/ ____ \| |  | | |  | | |__| | |__| | |__| |
- |_|  |_/_/    \_\_|  |_|_|  |_|\____/ \____/|_____/
+  _____ _          _             _         
+ |_   _| |_  ___  | |___ __ _ __| |___ _ _ 
+   | | | ' \/ -_) | / -_) _` / _` / -_) '_|
+   |_| |_||_\___| |_\___\__,_\__,_\___|_|  
+                                           
 > CH › @theleader205
-~> DEVELOPER › @MahmoudM2
+~> DEVELOPER › @C_V205
 ]])
 sudos = dofile("./ledarbot.lua") 
 SUDO = tonumber(sudos.SUDO)
@@ -6065,6 +6064,13 @@ end,nil)
 end
 tdcli_function ({ID = "GetMessage",chat_id_ = msg.chat_id_,message_id_ = tonumber(msg.reply_to_message_id_)}, start_function, nil)
 return false
+end
+
+if text == "رفع زوجتي" then    
+send(msg.chat_id_, msg.id_,"تم رفع العضو بنجاح
+الان هي مراتك 
+بلاش محن فالروم روحو برايفت ❤️") 
+return false 
 end
 
 if text == ("تنزيل زوجتي") or text == ("طلاق") and msg.reply_to_message_id_ and Mod(msg) then
