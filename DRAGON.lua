@@ -6067,9 +6067,7 @@ return false
 end
 
 if text == "رفع زوجتي" then    
-send(msg.chat_id_, msg.id_,"تم رفع العضو بنجاح
-الان هي مراتك 
-بلاش محن فالروم روحو برايفت ❤️") 
+send(msg.chat_id_, msg.id_,"اهلا عزيزي n\ تم رفع العضو بنجاح n\ روحو اعملو واحد برايفت يقلب ❤️") 
 return false 
 end
 
