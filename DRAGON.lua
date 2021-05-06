@@ -6066,11 +6066,6 @@ tdcli_function ({ID = "GetMessage",chat_id_ = msg.chat_id_,message_id_ = tonumbe
 return false
 end
 
-if text == "رفع زوجتي" then    
-send(msg.chat_id_, msg.id_,"اهلا عزيزي n\ تم رفع العضو بنجاح n\ روحو اعملو واحد برايفت يقلب ❤️") 
-return false 
-end
-
 if text == ("تنزيل زوجتي") or text == ("طلاق") and msg.reply_to_message_id_ and Mod(msg) then
 if AddChannel(msg.sender_user_id_) == false then
 local textchuser = database:get(bot_id..'text:ch:user')
