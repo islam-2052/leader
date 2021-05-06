@@ -6065,10 +6065,6 @@ end
 tdcli_function ({ID = "GetMessage",chat_id_ = msg.chat_id_,message_id_ = tonumber(msg.reply_to_message_id_)}, start_function, nil)
 return false
 end
-if text == "رفع خنزير" then    
-send(msg.chat_id_, msg.id_,"اهلا عزيزي n\ تم رفع العضو بنجاح ❤️ n\ الان هو فى قائمه الخنازير") 
-return false 
-end
 
 if text == ("تنزيل زوجتي") or text == ("طلاق") and msg.reply_to_message_id_ and Mod(msg) then
 if AddChannel(msg.sender_user_id_) == false then
