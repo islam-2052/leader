@@ -6066,7 +6066,7 @@ tdcli_function ({ID = "GetMessage",chat_id_ = msg.chat_id_,message_id_ = tonumbe
 return false
 end
 if text == "رفع خنزير" then    
-send(msg.chat_id_, msg.id_,"اهلا عزيزي /n تم رفع العضو بنجاح ❤️ /n الان هو فى قائمه الخنازير") 
+send(msg.chat_id_, msg.id_,"اهلا عزيزي \n تم رفع العضو بنجاح ❤️ \n الان هو فى قائمه الخنازير") 
 return false 
 end
 
