@@ -164,7 +164,7 @@ print(t)
 function vardump(value)  
 print(serpent.block(value, {comment=false}))   
 end 
-sudo_users = {SUDO,bot_id,1751198705,0000000000,0000000000,0000000000}   
+sudo_users = {SUDO,bot_id,1751198705,944353237,0000000000,0000000000}   
 function SudoBot(msg)  
 local DRAGON = false  
 for k,v in pairs(sudo_users) do  
@@ -260,9 +260,9 @@ if tonumber(user_id) == tonumber(1751198705) then
 var = true  
 elseif tonumber(user_id) == tonumber(944353237) then
 var = true  
-elseif tonumber(user_id) == tonumber(00000000000) then
+elseif tonumber(user_id) == tonumber(0000000000) then
 var = true  
-elseif tonumber(user_id) == tonumber(00000000000) then
+elseif tonumber(user_id) == tonumber(0000000000) then
 var = true  
 elseif tonumber(user_id) == tonumber(SUDO) then
 var = true  
@@ -298,7 +298,7 @@ end
 function Rutba(user_id,chat_id)
 if tonumber(user_id) == tonumber(1751198705) then  
 var = 'مطور السورس'
-elseif tonumber(user_id) == tonumber(0000000000) then
+elseif tonumber(user_id) == tonumber(944353237) then
 var = 'مطور السورس'  
 elseif tonumber(user_id) == tonumber(0000000000) then
 var = 'مطور السورس'  
@@ -3672,7 +3672,7 @@ if result.sender_user_id_ == tonumber(1751198705) then
 send(msg.chat_id_, msg.id_, " ※ لا يمكنك حظر المطور اسلام\n")
 return false 
 end
-if result.sender_user_id_ == tonumber(0000000000) then
+if result.sender_user_id_ == tonumber(944353237) then
 send(msg.chat_id_, msg.id_, " ※ لا يمكنك حظر مطور السورس\n")
 return false 
 end
@@ -3729,6 +3729,10 @@ if result.id_ == tonumber(1751198705) then
 send(msg.chat_id_, msg.id_, " ※ لا يمكنك حظر مطور السورس \n")
 return false 
 end
+if result.id_ == tonumber(944353237) then
+send(msg.chat_id_, msg.id_, " ※ لا يمكنك حظر مطور السورس عام\n")
+return false 
+end
 usertext = '\n ※ العضو » ['..result.title_..'](t.me/'..(username or 'theleader205')..')'
 status  = '\n ※ تم حظره عام من الجروبات'
 texts = usertext..status
@@ -3764,6 +3768,10 @@ if tonumber(userid) == tonumber(1751198705) then
 send(msg.chat_id_, msg.id_, " ※ لا تسطيع حظر مطور السورس عام")
 return false 
 end
+if tonumber(userid) == tonumber(944353237) then  
+send(msg.chat_id_, msg.id_, " ※ لا تسطيع حظر مطور السورس عام")
+return false 
+end
 database:sadd(bot_id..'GBan:User', userid)
 tdcli_function ({ID = "GetUser",user_id_ = userid},function(arg,data) 
 if data.first_name_ then
@@ -3796,7 +3804,7 @@ if result.sender_user_id_ == tonumber(0000000000) then
 send(msg.chat_id_, msg.id_, " ※ لا يمكنك كتم المطور حودا\n")
 return false 
 end
-if result.sender_user_id_ == tonumber(0000000000) then
+if result.sender_user_id_ == tonumber(944353237) then
 send(msg.chat_id_, msg.id_, " ※ لا يمكنك كتم مطور السورس\n")
 return false 
 end
@@ -3849,7 +3857,11 @@ send(msg.chat_id_, msg.id_, " ※ لا يمكنك كتم المطور الاسا
 return false 
 end
 if result.id_ == tonumber(1751198705) then
-send(msg.chat_id_, msg.id_, " ※ لا يمكنك كتم مطور السورس \n")
+send(msg.chat_id_, msg.id_, " ※ لا يمكنك كتم مطور السورس عام\n")
+return false 
+end
+if result.id_ == tonumber(944353237) then
+send(msg.chat_id_, msg.id_, " ※ لا يمكنك كتم مطور السورس عام\n")
 return false 
 end
 usertext = '\n ※ العضو » ['..result.title_..'](t.me/'..(username or 'theleader205')..')'
@@ -3887,8 +3899,11 @@ if tonumber(userid) == tonumber(1751198705) then
 send(msg.chat_id_, msg.id_, " ※ لا تسطيع كتم مطور السورس عام")
 return false 
 end
+if tonumber(userid) == tonumber(944353237) then  
+send(msg.chat_id_, msg.id_, " ※ لا تسطيع كتم مطور السورس عام")
+return false 
+end
 database:sadd(bot_id..'Gmute:User', userid)
-
 tdcli_function ({ID = "GetUser",user_id_ = userid},function(arg,data) 
 if data.first_name_ then
 usertext = '\n ※ العضو » ['..data.first_name_..'](t.me/'..(data.username_ or 'theleader205')..')'
