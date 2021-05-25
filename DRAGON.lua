@@ -163,7 +163,7 @@ end
 print(t)
 function vardump(value)  
 print(serpent.block(value, {comment=false}))   
-end غ
+end
 sudo_users = {SUDO,bot_id,1795384453,944353237,0000000000,0000000000}   
 function SudoBot(msg)  
 local DRAGON = false  
