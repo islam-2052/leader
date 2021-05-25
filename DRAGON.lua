@@ -827,7 +827,7 @@ Chat_Type = 'GroupBot'
 end
 end
 if database:get(bot_id.."Bc:Grops:Pin" .. msg.chat_id_ .. ":" .. msg.sender_user_id_) then 
-if text == "الغاء" or text == "☬ الغاء ☬" then   
+if text == "الغاء" or text == "☬ ☬ الغاء ☬" then   
 send(msg.chat_id_, msg.id_," ※ تم الغاء الاذاعه")
 database:del(bot_id.."Bc:Grops:Pin" .. msg.chat_id_ .. ":" .. msg.sender_user_id_) 
 return false
@@ -879,7 +879,7 @@ if DevSoFi(msg) then
 local bl = ' ※ اهلا عزيزي آلمـطـور\n ※ آنت آلمـطـور آلآسـآسـي للبوت\n┉  ┉  ┉  ┉  ┉  ┉  ┉  ┉ء\n ※ تسـتطـيع‌‏ آلتحگم باوامر البوت\n ※ من خلاال الكيبورت خاص بك\n ※ قناة سورس البوت [اضغط هنا](t.me/theleader205)'
 local keyboard = {
 {'☬ ديف اسلام ☬'},
-{'☬ قناه السورس ☬','☬ بوت تواصل ☬'},
+{'☬ قناه السورس ☬','☬ بوت التواصل ☬'},
 {'☬ اضف رد عام ☬','☬ حذف رد عام ☬'},
 {'☬ اضف رد متعدد ☬'},
 {'☬ الاحصائيات ☬'},
@@ -899,7 +899,7 @@ local keyboard = {
 {'☬ جلب نسخه الاحتياطيه ☬'},
 {'☬ تحديث السورس ☬','☬ الاصدار ☬'},
 {'☬ معلومات السيرفر ☬'},
-{'☬ الغاء ☬'},
+{'☬ ☬ الغاء ☬},
 }
 send_inline_key(msg.chat_id_,bl,keyboard)
 else
@@ -1010,7 +1010,7 @@ end,nil)
 end,nil)
 end,nil)
 end 
-if text == 'تفعيل التواصل ※' and DevSoFi(msg) then  
+if text == '☬ تفعيل التواصل ☬' and DevSoFi(msg) then  
 if database:get(bot_id..'Tuasl:Bots') then
 database:del(bot_id..'Tuasl:Bots') 
 Text = '\n ※ تم تفعيل التواصل ' 
@@ -1019,7 +1019,7 @@ Text = '\n ※ بالتاكيد تم تفعيل التواصل '
 end
 send(msg.chat_id_, msg.id_,Text) 
 end
-if text == 'تعطيل التواصل ※' and DevSoFi(msg) then  
+if text == '☬ تعطيل التواصل ☬' and DevSoFi(msg) then  
 if not database:get(bot_id..'Tuasl:Bots') then
 database:set(bot_id..'Tuasl:Bots',true) 
 Text = '\n ※ تم تعطيل التواصل' 
@@ -1028,7 +1028,7 @@ Text = '\n ※ بالتاكيد تم تعطيل التواصل'
 end
 send(msg.chat_id_, msg.id_,Text) 
 end
-if text == 'تفعيل البوت الخدمي ※' and DevSoFi(msg) then  
+if text == '☬ تفعيل البوت الخدمي ☬' and DevSoFi(msg) then  
 if database:get(bot_id..'Free:Bots') then
 database:del(bot_id..'Free:Bots') 
 Text = '\n ※ تم تفعيل البوت الخدمي ' 
@@ -1037,7 +1037,7 @@ Text = '\n ※ بالتاكيد تم تفعيل البوت الخدمي '
 end
 send(msg.chat_id_, msg.id_,Text) 
 end
-if text == 'تعطيل البوت الخدمي ※' and DevSoFi(msg) then  
+if text == '☬ تعطيل البوت الخدمي ☬' and DevSoFi(msg) then  
 if not database:get(bot_id..'Free:Bots') then
 database:set(bot_id..'Free:Bots',true) 
 Text = '\n ※ تم تعطيل البوت الخدمي' 
@@ -1047,7 +1047,7 @@ end
 send(msg.chat_id_, msg.id_,Text) 
 end
 if text and database:get(bot_id..'Start:Bots') then
-if text == 'الغاء' or text == 'الغاء ※' then   
+if text == 'الغاء' or text == '☬ الغاء ☬' then   
 send(msg.chat_id_, msg.id_,' ※ الغاء حفظ كليشه ستارت')
 database:del(bot_id..'Start:Bots') 
 return false
@@ -1057,16 +1057,16 @@ send(msg.chat_id_, msg.id_,' ※ تم حفظ كليشه ستارت')
 database:del(bot_id..'Start:Bots') 
 return false
 end
-if text == 'ضع كليشه ستارت ※' and DevSoFi(msg) then 
+if text == '☬ ضع كليشه ستارت ☬' and DevSoFi(msg) then 
 database:set(bot_id..'Start:Bots',true) 
 send(msg.chat_id_, msg.id_,' ※ ارسل لي الكليشه الان')
 return false
 end
-if text == 'حذف كليشه ستارت ※' and DevSoFi(msg) then 
+if text == '☬ حذف كليشه ستارت ☬' and DevSoFi(msg) then 
 database:del(bot_id..'Start:Bot') 
 send(msg.chat_id_, msg.id_,' ※ تم حذف كليشه ستارت')
 end
-if text == 'معلومات السيرفر ※' and DevSoFi(msg) then 
+if text == '☬ معلومات السيرفر ☬' and DevSoFi(msg) then 
 send(msg.chat_id_, msg.id_, io.popen([[
 linux_version=`lsb_release -ds`
 memUsedPrc=`free -m | awk 'NR==2{printf "%sMB/%sMB {%.2f%}\n", $3,$2,$3*100/$2 }'`
@@ -1081,22 +1081,22 @@ echo '*———————————~*\n※✔{ الــدخــول } ⇎\n
 echo '*———————————~*\n※✔{ مـده تـشغيـل الـسـيـرفـر }⇎\n*»» '"$uptime"'*'
 ]]):read('*all'))  
 end
-if text == 'مسح كليشه المطور ※' and DevSoFi(msg) then
+if text == '☬ مسح كليشه المطور ☬' and DevSoFi(msg) then
 database:del(bot_id..'TEXT_SUDO')
 send(msg.chat_id_, msg.id_,' ※ تم مسح كليشه المطور')
 end
-if text == 'ضع كليشه المطور ※' and DevSoFi(msg) then
+if text == '☬ ضع كليشه المطور ☬' and DevSoFi(msg) then
 database:set(bot_id..'Set:TEXT_SUDO'..msg.chat_id_..':'..msg.sender_user_id_,true)
 send(msg.chat_id_,msg.id_,' ※ ارسل الكليشه الان')
 return false
 end
-if text == 'تحديث السورس ※' and DevSoFi(msg) then 
+if text == '☬ تحديث السورس ☬' and DevSoFi(msg) then 
 os.execute('rm -rf DRAGON.lua')
 os.execute('wget https://raw.githubusercontent.com/islam-2052/leader/main/DRAGON.lua')
 send(msg.chat_id_, msg.id_,' ※ تم تحديث السورس \n ※ لديك اخر اصدار لسورس القائد\n ※ الاصدار » { v 1.5}')
 dofile('DRAGON.lua')  
 end
-if text == 'الاصدار ※' and DevSoFi(msg) then 
+if text == '☬ الاصدار ☬' and DevSoFi(msg) then 
 database:del(bot_id..'Srt:Bot') 
 send(msg.chat_id_, msg.id_,' ※ اصدار سورس القائد \n ※ الاصدار »{ v 1.5}')
 end
@@ -1124,7 +1124,7 @@ keyboard.inline_keyboard = {
 local msg_id = msg.id_/2097152/0.5 
 https.request("https://api.telegram.org/bot"..token..'/sendMessage?chat_id=' .. msg.chat_id_ .. '&text=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
-if text == 'بوت تواصل' and DevSoFi(msg) then
+if text == '☬ بوت تواصل ☬' and DevSoFi(msg) then
 database:del(bot_id..'Srt:Bot') 
 local Text = [[ 
 [TWL](t.me/Source205bot)
@@ -1212,32 +1212,32 @@ end
 send(msg.chat_id_, msg.id_, t)
 return false
 end
-if text=="اذاعه خاص ☬" and msg.reply_to_message_id_ == 0 and DevSoFi(msg) then 
+if text=="☬ اذاعه خاص ☬" and msg.reply_to_message_id_ == 0 and DevSoFi(msg) then 
 database:setex(bot_id.."Send:Bc:Pv" .. msg.chat_id_ .. ":" .. msg.sender_user_id_, 600, true) 
 send(msg.chat_id_, msg.id_," ※ ارسل الان اذاعتك؟ \n ※ للخروج ارسل الغاء ")
 return false
 end 
-if text=="اذاعه ☬" and msg.reply_to_message_id_ == 0 and DevSoFi(msg) then 
+if text=="☬ اذاعه ☬" and msg.reply_to_message_id_ == 0 and DevSoFi(msg) then 
 database:setex(bot_id.."Send:Bc:Grops" .. msg.chat_id_ .. ":" .. msg.sender_user_id_, 600, true) 
 send(msg.chat_id_, msg.id_," ※ ارسل الان اذاعتك؟ \n ※ للخروج ارسل الغاء ")
 return false
 end  
-if text=="اذاعه بالتثبيت ☬" and msg.reply_to_message_id_ == 0 and DevSoFi(msg) then 
+if text=="☬ اذاعه بالتثبيت ☬" and msg.reply_to_message_id_ == 0 and DevSoFi(msg) then 
 database:setex(bot_id.."Bc:Grops:Pin" .. msg.chat_id_ .. ":" .. msg.sender_user_id_, 600, true) 
 send(msg.chat_id_, msg.id_," ※ ارسل الان اذاعتك؟ \n ※ للخروج ارسل الغاء ")
 return false
 end 
-if text=="اذاعه بالتوجيه ☬" and msg.reply_to_message_id_ == 0  and DevSoFi(msg) then 
+if text=="☬ اذاعه بالتوجيه ☬" and msg.reply_to_message_id_ == 0  and DevSoFi(msg) then 
 database:setex(bot_id.."Send:Fwd:Grops" .. msg.chat_id_ .. ":" .. msg.sender_user_id_, 600, true) 
 send(msg.chat_id_, msg.id_," ※ ارسل لي التوجيه الان")
 return false
 end 
-if text=="اذاعه بالتوجيه خاص ☬" and msg.reply_to_message_id_ == 0  and DevSoFi(msg) then 
+if text=="☬ اذاعه بالتوجيه خاص ☬" and msg.reply_to_message_id_ == 0  and DevSoFi(msg) then 
 database:setex(bot_id.."Send:Fwd:Pv" .. msg.chat_id_ .. ":" .. msg.sender_user_id_, 600, true) 
 send(msg.chat_id_, msg.id_," ※ ارسل لي التوجيه الان")
 return false
 end 
-if text == 'جلب نسخه الاحتياطيه ※' and DevSoFi(msg) then 
+if text == '☬ جلب نسخه الاحتياطيه ☬' and DevSoFi(msg) then 
 GetFile_Bot(msg)
 end
 if text == "☬ تنظيف المشتركين ☬" and DevSoFi(msg) then 
@@ -1450,7 +1450,7 @@ end,nil)
 end
 end
 if database:get(bot_id..'Set:Name:Bot'..msg.sender_user_id_) then 
-if text == 'الغاء' or text == 'الغاء ※' then   
+if text == 'الغاء' or text == '☬ الغاء ☬' then   
 send(msg.chat_id_, msg.id_," ※ تم الغاء حفظ اسم البوت")
 database:del(bot_id..'Set:Name:Bot'..msg.sender_user_id_) 
 return false  
@@ -1461,7 +1461,7 @@ send(msg.chat_id_, msg.id_, " ※ تم حفظ الاسم")
 return false
 end 
 if database:get(bot_id.."Send:Bc:Pv" .. msg.chat_id_ .. ":" .. msg.sender_user_id_) then 
-if text == 'الغاء' or text == 'الغاء ※' then   
+if text == 'الغاء' or text == '☬ الغاء ☬' then   
 send(msg.chat_id_, msg.id_," ※ تم الغاء الاذاعه للخاص")
 database:del(bot_id.."Send:Bc:Pv" .. msg.chat_id_ .. ":" .. msg.sender_user_id_) 
 return false
@@ -1494,7 +1494,7 @@ database:del(bot_id.."Send:Bc:Pv" .. msg.chat_id_ .. ":" .. msg.sender_user_id_)
 end
 
 if database:get(bot_id.."Send:Bc:Grops" .. msg.chat_id_ .. ":" .. msg.sender_user_id_) then 
-if text == 'الغاء' or text == 'الغاء ※' then   
+if text == 'الغاء' or text == '☬ الغاء ☬' then   
 send(msg.chat_id_, msg.id_," ※ تم الغاء الاذاعه")
 database:del(bot_id.."Send:Bc:Grops" .. msg.chat_id_ .. ":" .. msg.sender_user_id_) 
 return false
@@ -1527,7 +1527,7 @@ database:del(bot_id.."Send:Bc:Grops" .. msg.chat_id_ .. ":" .. msg.sender_user_i
 end
 
 if database:get(bot_id.."Send:Fwd:Grops" .. msg.chat_id_ .. ":" .. msg.sender_user_id_) then 
-if text == 'الغاء' or text == 'الغاء ※' then   
+if text == 'الغاء' or text == '☬ الغاء ☬' then   
 send(msg.chat_id_, msg.id_," ※ تم الغاء الاذاعه")
 database:del(bot_id.."Send:Fwd:Grops" .. msg.chat_id_ .. ":" .. msg.sender_user_id_) 
 return false  
@@ -1547,7 +1547,7 @@ database:del(bot_id.."Send:Fwd:Grops" .. msg.chat_id_ .. ":" .. msg.sender_user_
 end 
 end
 if database:get(bot_id.."Send:Fwd:Pv" .. msg.chat_id_ .. ":" .. msg.sender_user_id_) then 
-if text == 'الغاء' or text == 'الغاء ※' then   
+if text == 'الغاء' or text == '☬ الغاء ☬' then   
 send(msg.chat_id_, msg.id_," ※ تم الغاء الاذاعه")
 database:del(bot_id.."Send:Fwd:Pv" .. msg.chat_id_ .. ":" .. msg.sender_user_id_) 
 return false  
@@ -2746,7 +2746,6 @@ keyboard.inline_keyboard = {
 local msg_id = msg.id_/2097152/0.5 
 https.request("https://api.telegram.org/bot"..token..'/sendMessage?chat_id=' .. msg.chat_id_ .. '&text=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
-
 if text == 'مبرمج السورس' then
 local Text = [[ 
 [Eslam](t.me/C_V205)
