@@ -899,7 +899,7 @@ local keyboard = {
 {'☬ جلب نسخه الاحتياطيه ☬'},
 {'☬ تحديث السورس ☬','☬ الاصدار ☬'},
 {'☬ معلومات السيرفر ☬'},
-{'☬ ☬ الغاء ☬},
+{'☬ الغاء ☬'},
 }
 send_inline_key(msg.chat_id_,bl,keyboard)
 else
@@ -2599,11 +2599,11 @@ end
 
 if text == 'اسلام' or text == 'مطور السورس' or text == 'Eslam' then 
 local Text = [[ 
-[DEV Eslam](t.me/C_V205)
+[TᕼE ᒪEᗩᗪEᖇ ♩](t.me/C_V205)
 ]] 
 keyboard = {}  
 keyboard.inline_keyboard = { 
-{{text = 'اسلام مبرمج السورس ✅', url="t.me/C_V205"}}, 
+{{text = '𝚝𝚑𝚎 𝚕𝚎𝚊𝚍𝚎𝚛 ⚚', url="t.me/C_V205"}}, 
 } 
 local msg_id = msg.id_/2097152/0.5 
 https.request("https://api.telegram.org/bot"..token..'/sendMessage?chat_id=' .. msg.chat_id_ .. '&text=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
