@@ -10213,10 +10213,6 @@ database:srem(bot_id..'Chek:Groups',msg.chat_id_)
 end
 return false  
 end
-if text == 'بوت' then
-Namebot = (database:get(bot_id..'Name:Bot') or 'القائد')
-send(msg.chat_id_, msg.id_,'اسمي ['..Namebot..'] يا قلبي ❤')
-end
 if text == 'الاحصائيات' then
 if Sudo(msg) then 
 local Groups = database:scard(bot_id..'Chek:Groups')  
