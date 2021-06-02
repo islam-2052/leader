@@ -9186,12 +9186,12 @@ local DRAGON_Msg = {
 'اسمي '..Namebot..' يا روحي🙄',
 'اسمي  '..Namebot..' يعمري🌚',
 }
-keyboard = {}  
+keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = 'قناه السورس', url="t.me/theleader205"}},
-} 
-https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/theleader205&caption=' .. URL.escape(math.random(#DRAGON_Msg)).."&reply_to_message_id="..msg.id_/2097152/0.5.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
-return false
+{{text = 'قناة السورس',url="t.me/theleader205"}},
+}
+local msg_id = msg.id_/2097152/0.5
+https.request("https://api.telegram.org/bot"..token..'/sendMessage?chat_id=' .. msg.chat_id_ .. '&text=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 end
 if text=="اذاعه خاص" and msg.reply_to_message_id_ == 0 and Sudo(msg) then 
 if database:get(bot_id..'Bc:Bots') and not DevSoFi(msg) then 
