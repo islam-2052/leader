@@ -2575,11 +2575,11 @@ end
 if text == 'ايسكو' then 
 local msg_id = msg.id_/2097152/0.5 
 local Text = [[ 
-[TᕼE ᒪEᗩᗪEᖇ ♩](t.me/XXx_EsLaM_xXX)
+[• 𝐈  𝐒  𝐂  𝐎 •](t.me/Xx_CrAzY_eL3aSeMa_xX)
 ]] 
 keyboard = {}  
-keyboard.inline_keyboard = {{{text = '• 𝐈  𝐒  𝐂  𝐎 •', url="t.me/XXx_EsLaM_xXX"}},} 
-https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/XXx_EsLaM_xXX&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+keyboard.inline_keyboard = {{{text = '• 𝐈  𝐒  𝐂  𝐎 •', url="t.me/Xx_CrAzY_eL3aSeMa_xX"}},} 
+https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/Xx_CrAzY_eL3aSeMa_xX&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 end
 
 if text == "تويت" or text == "كت تويت" then 
