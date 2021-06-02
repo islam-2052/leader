@@ -9179,20 +9179,6 @@ local DRAGON_Msg = {
 send(msg.chat_id_, msg.id_,'['..DRAGON_Msg[math.random(#DRAGON_Msg)]..']') 
 return false
 end
-if text == "بوت" then  
-Namebot = (database:get(bot_id..'Name:Bot') or 'القائد')
-local DRAGON_Msg = {
-'اسمي  '..Namebot..' يا قلبي ❤',
-'اسمي '..Namebot..' يا روحي🙄',
-'اسمي  '..Namebot..' يعمري🌚',
-}
-keyboard = {} 
-keyboard.inline_keyboard = {
-{{text = 'قناة السورس',url="t.me/theleader205"}},
-}
-local msg_id = msg.id_/2097152/0.5
-https.request("https://api.telegram.org/bot"..token..'/sendMessage?chat_id=' .. msg.chat_id_ .. '&text=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
-end
 if text=="اذاعه خاص" and msg.reply_to_message_id_ == 0 and Sudo(msg) then 
 if database:get(bot_id..'Bc:Bots') and not DevSoFi(msg) then 
 send(msg.chat_id_, msg.id_,' 𖤍 الاذاعه معطله من قبل المطور الاساسي')
