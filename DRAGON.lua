@@ -2547,6 +2547,15 @@ end
 end,nil)  
 end
 
+if text == 'بوت' or text == 'بوتت' then  
+local Namebot = database:get(bot_id..'Name:Bot') or 'القائد' 
+local msg_id = msg.id_/2097152/0.5  
+local Text = 'اسمي '..Namebot..'' 
+keyboard = {}   
+keyboard.inline_keyboard = {{{text = '• 𝐒 𝐎 𝐔 𝐑 𝐂 𝐄   𝐓 𝐇 𝐄   𝐋 𝐄 𝐀 𝐃 𝐄 𝐑 •', url="t.me/theleader205"}},}  
+https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/theleader205&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+end
+
 if text == 'السورس' or text == 'سورس' or text == 'يا سورس' or text == 'مين نصبلك' or text == 'منصب عند مين' or text == 'عاوز بوت' then 
 local msg_id = msg.id_/2097152/0.5 
 local Text = [[ 
