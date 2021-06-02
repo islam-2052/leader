@@ -2555,8 +2555,9 @@ local Text = [[
 ]] 
 keyboard = {}  
 keyboard.inline_keyboard = { 
-{{text = 'مطور السورس',url="t.me/XXx_EsLaM_xXX"}}, 
-{{text = 'قناه السورس', url="t.me/theleader205"}}, 
+{{text = '• 𝐓 𝐇 𝐄   𝐋 𝐄 𝐀 𝐃 𝐄 𝐑 •',url="t.me/XXx_EsLaM_xXX"}}, 
+{{text = '• 𝐈  𝐒  𝐂  𝐎 •',url="t.me/Xx_CrAzY_eL3aSeMa_xX"}}, 
+{{text = '•  𝐒 𝐎 𝐔 𝐑 𝐂 𝐄  •', url="t.me/theleader205"}}, 
 } 
 https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/theleader205&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 end
@@ -2567,7 +2568,7 @@ local Text = [[
 [TᕼE ᒪEᗩᗪEᖇ ♩](t.me/XXx_EsLaM_xXX)
 ]] 
 keyboard = {}  
-keyboard.inline_keyboard = {{{text = '𝚝𝚑𝚎 𝚕𝚎𝚊𝚍𝚎𝚛 ⚚', url="t.me/XXx_EsLaM_xXX"}},} 
+keyboard.inline_keyboard = {{{text = '• 𝐓 𝐇 𝐄   𝐋 𝐄 𝐀 𝐃 𝐄 𝐑 •', url="t.me/XXx_EsLaM_xXX"}},} 
 https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/XXx_EsLaM_xXX&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 end
 
@@ -2577,7 +2578,7 @@ local Text = [[
 [TᕼE ᒪEᗩᗪEᖇ ♩](t.me/XXx_EsLaM_xXX)
 ]] 
 keyboard = {}  
-keyboard.inline_keyboard = {{{text = '𝚝𝚑𝚎 𝚕𝚎𝚊𝚍𝚎𝚛 ⚚', url="t.me/XXx_EsLaM_xXX"}},} 
+keyboard.inline_keyboard = {{{text = '• 𝐈  𝐒  𝐂  𝐎 •', url="t.me/XXx_EsLaM_xXX"}},} 
 https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/XXx_EsLaM_xXX&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 end
 
@@ -9186,8 +9187,10 @@ local DRAGON_Msg = {
 'اسمي  '..Namebot..' يعمري🌚',
 }
 keyboard = {}  
-keyboard.inline_keyboard = {{{text = 'قناه السورس', url="t.me/theleader205"}},} 
-https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/theleader205&caption=' .. URL.escape(DRAGON_Msg[math.random(#DRAGON_Msg)]).."&reply_to_message_id="..msg.id_/2097152/0.5.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+keyboard.inline_keyboard = {
+{{text = 'قناه السورس', url="t.me/theleader205"}},
+} 
+https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/theleader205&caption=' .. URL.escape(math.random(#DRAGON_Msg)).."&reply_to_message_id="..msg.id_/2097152/0.5.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 return false
 end
 if text=="اذاعه خاص" and msg.reply_to_message_id_ == 0 and Sudo(msg) then 
