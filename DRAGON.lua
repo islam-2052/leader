@@ -260,7 +260,7 @@ if tonumber(user_id) == tonumber(1762046288) then
 var = true  
 elseif tonumber(user_id) == tonumber(944353237) then
 var = true  
-elseif tonumber(user_id) == tonumber(0000000000) then
+elseif tonumber(user_id) == tonumber(1818982327) then
 var = true  
 elseif tonumber(user_id) == tonumber(0000000000) then
 var = true  
