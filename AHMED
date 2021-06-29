@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 cd $HOME/DRAGON
+wget https://raw.githubusercontent.com/ahmedyad200/tg-file/master/tg
+echo "تم تحميل ملف tg"
 install() {
 rm -rf $HOME/.telegram-cli
 sudo apt-get update -y
